@@ -13,6 +13,10 @@ public class Jogador {
         return pontuacao;
     }
 
+    public void adicionarPontuacao(int pontos) {
+        this.pontuacao += pontos;
+    }
+
     @Override
     public String toString() {
         return String.format("Jogador: %s | Pontuação: %d", this.nome, this.pontuacao);

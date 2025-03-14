@@ -1,6 +1,7 @@
 package main;
 
 import jogos.Ranking;
+import jogos.Torneio;
 import model.Jogador;
 
 public class Main {
@@ -21,5 +22,24 @@ public class Main {
         ranking.adicionarJogador(jogador3);
 
         ranking.exibirRanking();
+
+
+        Torneio torneio1 = new Torneio("Torneio de Verão");
+        torneio1.adicionarJogador(new Jogador("Maria", 0));
+        torneio1.adicionarJogador(new Jogador("João", 0));
+        torneio1.adicionarJogador(new Jogador("José", 0));
+
+        torneio1.simularTorneio();
+        torneio1.exibirResultado();
+
+        Torneio torneio2 = new Torneio("Torneio de Inverno");
+        torneio2.adicionarJogador(new Jogador("Ana", 0));
+        torneio2.adicionarJogador(new Jogador("Carlos", 0));
+        torneio2.adicionarJogador(new Jogador("Fernanda", 0));
+        torneio2.adicionarJogador(new Jogador("Lucas", 0));
+
+        torneio2.simularTorneio();
+        torneio2.exibirResultado();
     }
+
 }
